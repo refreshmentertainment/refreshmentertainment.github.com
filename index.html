@@ -1,1 +1,47 @@
-Hello World!
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>REFRESHMENTERTAINMENT 2K12</title>
+<style type="text/css">
+	html, body, #wrapper {
+		height:100%;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	  	border: 0;
+		background-color: black;
+	}
+	#wrapper td {
+	   vertical-align: middle;
+	   text-align: center;
+	}
+	#logo {
+		height: 15em;
+	}
+	#countdown {
+		color: yellow;
+		font-size:5em;
+		font-family:"Arial";
+	}
+</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.countdown.js"></script>
+<script type="text/javascript">
+$(function () {
+	$('#countdown').countdown({until: new Date("January 28, 2012 13:00"), compact: true});
+});
+</script>
+</head>
+<body>
+	<table id="wrapper">
+      <tr>
+		<td>
+			<img id="logo" src="starwars-logo.png" alt="Star Wars" />
+			<div id="countdown"></div>
+		</td>
+      </tr>
+	</table>
+	<audio src="star-wars.m4a" autobuffer autoplay loop/>	
+</body>
+</html>

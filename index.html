@@ -24,12 +24,15 @@
 		font-size:5em;
 		font-family:"Arial";
 	}
+	a {
+		text-decoration: none;
+	}
 </style>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 <script type="text/javascript" src="jquery.countdown.js"></script>
 <script type="text/javascript">
 $(function () {
-	$('#countdown').countdown({until: new Date("January 28, 2012 13:00"), compact: true});
+	$('#countdown').countdown({until: new Date("January 29, 2012 13:00"), compact: true});
 });
 </script>
 </head>
@@ -37,11 +40,13 @@ $(function () {
 	<table id="wrapper">
       <tr>
 		<td>
+			<a href="javascript:document.getElementById('audio').play();">
 			<img id="logo" src="starwars-logo.png" alt="Star Wars" />
 			<div id="countdown"></div>
+			</a>
+			<audio id="audio" src="star-wars.m4a" autobuffer autoplay loop/>
 		</td>
       </tr>
 	</table>
-	<audio src="star-wars.m4a" autobuffer autoplay loop/>	
 </body>
 </html>

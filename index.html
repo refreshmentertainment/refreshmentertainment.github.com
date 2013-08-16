@@ -1,56 +1,36 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-<title>REFRESHMENTERTAINMENT XXXY "THE CLIMB"</title>
-<style type="text/css">
-	html, body, #wrapper {
-		height:100%;
-		width: 100%;
-		margin: 0;
-		padding: 0;
-	  	border: 0;
-		background-color: #000;
-	}
-	#wrapper td {
-	   vertical-align: middle;
-	   text-align: center;
-	}
-	#logo {
-		height: 30em;
-	}
-	.text {
-		font-size:4em;
-		font-family:"Arial";
-		color: #FFF;
-	}
-	a {
-		text-decoration: none;
-	}
-</style>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-<script type="text/javascript" src="jquery.countdown.js"></script>
-<script type="text/javascript">
-$(function () {
-	$('#countdown').countdown({until: new Date("August 16, 2013 19:00"), compact: true});
-});
-</script>
+	<title>REFRESHMENTERTAINMENT</title>
+	<!-- CDN 3rd party resources -->
+	<link rel="stylesheet" type="text/css" href="rfmtt.css">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    
+	<!-- Local 3rd party resources -->
+	<script type="text/javascript" src="jquery.countdown.js"></script>
+	
+	<!-- Local resources -->
+	<script src="rfmtt.js"></script>
 </head>
 <body>
-	<table id="wrapper">
-      <tr>
-		<td>
-			<a href="javascript:document.getElementById('audio').play();">
-			<div class="text">REFRESHMENTERTAINMENT XXXY:<br/>THE CLIMB</div>
-			<img id="logo" src="climb.gif" alt="climb" />
-			<div id="countdown" class="text"></div>
-			</a>
-			<audio id="audio" autobuffer autoplay loop>
-				<source src="climb.mp3">
-				<source src="climb.ogg">
-			</audio>
-		</td>
-      </tr>
-	</table>
+	<div class="content">
+		<span id="title"></span>
+		<br/>
+		<span id="subtitle"></span>
+		<br/>
+		<span id="countdown"></span>
+	</div>
+	<div class="footer">
+		<span id="controls">
+			<i class="icon-fast-backward" id="backward"></i>
+			<i class="icon-fixed-width icon-play" id="playpause"></i>
+			<i class="icon-fast-forward" id="forward"></i>
+		</span>
+	</div>
+
+	<audio id="audio" autobuffer autoplay loop>
+		<source id="audio-mp3" src="" />
+		<source id="audio-ogg" src="" />
+	</audio>
 </body>
 </html>

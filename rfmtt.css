@@ -1,0 +1,36 @@
+html {
+    height:100%;
+
+    background-image: url('media/climb/background.gif');
+    background-size: 100% 100%;
+}
+
+body {
+    display: table;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+
+    font-family:"Arial";
+    color: white;
+    text-align:center;
+    /* Font Outline */
+    text-shadow:
+    -1px -1px 10px #000,
+     1px -1px 10px #000,
+    -1px  1px 10px #000,
+     1px  1px 10px #000; 
+}
+
+.content {
+    display: table-row; 
+    height: auto;
+}
+.footer {
+    display: table-row;
+    height: 1px;
+}
+
+.disabled {
+    color: gray;
+}

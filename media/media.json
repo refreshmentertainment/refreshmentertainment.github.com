@@ -3,36 +3,36 @@
         "name": "starwars", 
         "title": "2K12", 
         "subtitle": "A Space Odyssey", 
-        "date": "January 29, 2012 13:00"
+        "date": "January 29, 2012 13:00 EST"
     },
     { 
         "name": "brokeback", 
         "title": "IX \"The Ocho\"", 
         "subtitle": "Pitching a tent together", 
-        "date": "April 22, 2012 10:00"
+        "date": "April 22, 2012 10:00 EST"
     },
     { 
         "name": "goodriddance", 
         "title": "XXX", 
         "subtitle": "Iwkyd fu j all you aklll btu tilt are guys!", 
-        "date": "May 28, 2012 8:00"
+        "date": "May 28, 2012 8:00 EDT"
     },
     { 
         "name": "fastfurious", 
         "title": "VVVVV", 
         "subtitle": "NO SUBTITLE NECESSARY", 
-        "date": "June 8, 2013 8:00"
+        "date": "June 8, 2013 8:00 EDT"
     },
     { 
         "name": "climb", 
         "title": "XXXY", 
         "subtitle": "THE CLIMB", 
-        "date": "August 16, 2013 19:00"
+        "date": "August 16, 2013 19:00 EDT"
     },
     { 
         "name": "rumble", 
         "title": "3.11", 
         "subtitle": "LET'S GET READY TO RUUMMMMMBLLLE",
-        "date": "September 14, 2013 15:00"
+        "date": "September 14, 2013 12:00 PDT"
     }
 ]

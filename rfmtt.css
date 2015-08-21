@@ -34,3 +34,7 @@ body {
 .disabled {
     color: gray;
 }
+
+#details a{
+    color: white;
+}

@@ -94,6 +94,10 @@ function updateRFMTT(){
     
     updateElement($("#title"), "text", "REFRESHMENTERTAINMENT " + event.title + ":");
     updateElement($("#subtitle"), "text", event.subtitle);
+    if(event.details)
+        $("#details").html(event.details);
+    else
+        $("#details").html("");
 
     updateElement($("#controls"), false, false, 0.3);
 };
